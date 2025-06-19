@@ -39,8 +39,7 @@
 - (void)loadData {
     
     NSArray * titleArr = @[@"视频一", @"视频二", @"视频三"];
-    NSArray * urlArr = @[@"http://test.miaocaiwang.com/app/rm.mp4", @"http://test.miaocaiwang.com/app/rm.mp4", @"http://test.miaocaiwang.com/app/rm.mp4"];
-    
+    NSArray * urlArr = @[@"https://vjs.zencdn.net/v/oceans.mp4", @"https://media.w3.org/2010/05/sintel/trailer.mp4", @"http://test.miaocaiwang.com/app/rm.mp4"];
     for (int i = 0; i < titleArr.count; i++) {
         
         RHVideoModel * model = [[RHVideoModel alloc] initWithVideoId:[NSString stringWithFormat:@"%03d", i + 1] title:titleArr[i] url:urlArr[i] currentTime:0];
